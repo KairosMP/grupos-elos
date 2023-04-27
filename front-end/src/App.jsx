@@ -16,16 +16,16 @@ import axios from 'axios';
 
 function App() {
   const [form, setForm] = useState({
-    nome: '',
+    userName: '',
     email: '',
     cpf: '',
     fone: '',
     cep: '',
-    log: '',
-    bairro: '',
-    cidade: '',
-    estado: '',
-    numero: '',
+    publicPlace: '',
+    neighborhood: '',
+    city: '',
+    state: '',
+    number: '',
   });
 
   const formSubmitCallback = () => {
@@ -78,8 +78,8 @@ function App() {
             <FormControl display="flex" flexDir="column" gap="4">
               <HStack spacing="4">
                 <Box w="100%">
-                  <FormLabel htmlFor="nome">Nome Completo</FormLabel>
-                  <Input id="nome" onChange={handleInputChange} />
+                  <FormLabel htmlFor="userName">Nome Completo</FormLabel>
+                  <Input id="userName" onChange={handleInputChange} />
                 </Box>
                 <Box w="100%">
                   <FormLabel htmlFor="email">E-mail</FormLabel>
@@ -102,24 +102,24 @@ function App() {
                   <Input id="cep" type="number" onChange={handleInputChange} />
                 </Box>
                 <Box w="100%">
-                  <FormLabel htmlFor="log">Logradouro</FormLabel>
-                  <Input id="log" onChange={handleInputChange} />
+                  <FormLabel htmlFor="publicPlace">Logradouro</FormLabel>
+                  <Input id="publicPlace" onChange={handleInputChange} />
                 </Box>
               </HStack>
               <HStack spacing="4">
                 <Box w="100%">
-                  <FormLabel htmlFor="bairro">Bairro</FormLabel>
-                  <Input id="bairro" onChange={handleInputChange} />
+                  <FormLabel htmlFor="neighborhood">Bairro</FormLabel>
+                  <Input id="neighborhood" onChange={handleInputChange} />
                 </Box>
                 <Box w="100%">
-                  <FormLabel htmlFor="cidade">Cidade</FormLabel>
-                  <Input id="cidade" onChange={handleInputChange} />
+                  <FormLabel htmlFor="city">Cidade</FormLabel>
+                  <Input id="city" onChange={handleInputChange} />
                 </Box>
               </HStack>
               <HStack spacing="4">
                 <Box w="100%">
                   <FormLabel>Estados</FormLabel>
-                  <Select placeholder="Escolha um estado">
+                  <Select placeholder="Escolha um estado" onChange={handleInputChange} id='state'>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
                     <option value="AP">Amapá</option>
@@ -150,8 +150,8 @@ function App() {
                   </Select>
                 </Box>
                 <Box w="20%">
-                  <FormLabel htmlFor="numero">numero</FormLabel>
-                  <Input id="numero" onChange={handleInputChange}/>
+                  <FormLabel htmlFor="number">numero</FormLabel>
+                  <Input id="number" onChange={handleInputChange}/>
                 </Box>
               </HStack>
               <HStack justify="center">
