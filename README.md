@@ -1,4 +1,4 @@
-# projeto-elos-group
+# Projeto-elos-group
 Gestão de Cartão de Benefícios
 
 Projeto para avaliar as habilidades do dev.
