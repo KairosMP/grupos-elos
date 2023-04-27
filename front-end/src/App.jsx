@@ -172,19 +172,6 @@ function App() {
             </FormControl>
           </form>
         </Center>
-        <Flex
-          as="footer"
-          h="6vh"
-          w="100vw"
-          marginTop={744}
-          align="center"
-          justify="center"
-          bg=" #283CA1 "
-        >
-          <Center color={'whiteAlpha.900'} w={'120'} fontSize={'2xl'}>
-            Developer by Miller &copy; 2023
-          </Center>
-        </Flex>
       </Flex>
     </Box>
   );
